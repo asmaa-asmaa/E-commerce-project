@@ -5,7 +5,7 @@
       v-model="drawer"
       :location="$vuetify.display.xs ? 'right' : 'left'"
       temporary
-      style="margin-top: 100px"
+      style="margin-top: 54px"
     >
       <v-list>
         <v-list-item
@@ -60,6 +60,29 @@ const icons = ref([
 .drawer {
   .v-navigation-drawer {
     top: 114px !important;
+  }
+  .v-navigation-drawer__scrim {
+    margin-top: -19px !important;
+  }
+}
+@media (max-width: 600px) {
+  .drawer {
+    .v-navigation-drawer {
+      margin-top: 105px !important;
+    }
+    .v-navigation-drawer__scrim {
+      margin-top: -19px !important;
+    }
+  }
+}
+@media (min-width: 601px) and (max-width: 959px) {
+  .drawer {
+    .v-navigation-drawer {
+      margin-top: 85px !important;
+    }
+    .v-navigation-drawer__scrim {
+      margin-top: -27px !important;
+    }
   }
 }
 </style>
